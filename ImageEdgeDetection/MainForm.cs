@@ -92,7 +92,18 @@ namespace ImageEdgeDetection
         {
             if (previewBitmap == null || cmbEdgeDetection.SelectedIndex == -1)
             {
+                // Active tous les boutons :
+                ActivateFilterButtons(true);
                 return;
+            }
+
+            // Inactive tous les boutons:
+            ActivateFilterButtons(false);
+
+            // Si aucun détecteur de bord n'est sélectionné
+            if (cmbEdgeDetection.SelectedIndex == 0)
+            {
+                ActivateFilterButtons(true);
             }
 
             Bitmap selectedSource = null;
@@ -339,6 +350,22 @@ namespace ImageEdgeDetection
             SecondPicBrush = newC;
         }
 
-        
+        // Method for activate or inactivate the Filters Buttons
+        public void ActivateFilterButtons(bool active)
+        {
+            buttonNightFilter.Enabled = active;
+            buttonHellFilter.Enabled = active;
+            buttonMiamiFilter.Enabled = active;
+            buttonZenFilter.Enabled = active;
+            buttonBlackAndWhite.Enabled = active;
+            buttonSwapFilter.Enabled = active;
+            buttonCrazyFilter.Enabled = active;
+            buttonMegaFilterGreen.Enabled = active;
+            buttonMegaFilterOrange.Enabled = active;
+            buttonMegaFilterPink.Enabled = active;
+            buttonMegaFilterCustom.Enabled = active;
+            buttonRainbowFilter.Enabled = active;
+            buttonChoiceColor.Enabled = active;
+        }  
     }
 }
