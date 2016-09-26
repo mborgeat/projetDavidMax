@@ -92,18 +92,19 @@ namespace ImageEdgeDetection
         {
             if (previewBitmap == null || cmbEdgeDetection.SelectedIndex == -1)
             {
-                // Active tous les boutons :
-                ActivateFilterButtons(true);
                 return;
             }
 
-            // Inactive tous les boutons:
-            ActivateFilterButtons(false);
-
-            // Si aucun détecteur de bord n'est sélectionné
+            // Si aucun détecteur de bord n'est sélectionné (1re ligne = "None")
             if (cmbEdgeDetection.SelectedIndex == 0)
             {
+                // Active tous les boutons
                 ActivateFilterButtons(true);
+            }
+            else
+            {
+                // Inactive tous les boutons
+                ActivateFilterButtons(false);
             }
 
             Bitmap selectedSource = null;
@@ -316,6 +317,7 @@ namespace ImageEdgeDetection
 
         private void buttonMegaFilterPink_Click(object sender, EventArgs e)
         {
+            picPreview.Image = Origin;          // Cette ligne manque dans le programme PictureBox
             Color c = Color.Pink;
             picPreview.Image = ImageFilters.ApplyFilterMega(new Bitmap(picPreview.Image), 230, 110, c);
             previewBitmap = (Bitmap)picPreview.Image;
@@ -353,6 +355,7 @@ namespace ImageEdgeDetection
         // Method for activate or inactivate the Filters Buttons
         public void ActivateFilterButtons(bool active)
         {
+            buttonMagicMosaic.Enabled = active;
             buttonNightFilter.Enabled = active;
             buttonHellFilter.Enabled = active;
             buttonMiamiFilter.Enabled = active;
