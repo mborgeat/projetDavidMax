@@ -34,6 +34,7 @@ namespace ImageEdgeDetection
             previewBitmap = (Bitmap)picPreview.Image;
         }
 
+        //action clique sur bouton load image
         private void btnOpenOriginal_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -53,6 +54,7 @@ namespace ImageEdgeDetection
             }
         }
 
+        //action clique sur bouton save image
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
             ApplyFilter(false);
@@ -60,6 +62,7 @@ namespace ImageEdgeDetection
             if (resultBitmap != null)
             {
                 SaveFileDialog sfd = new SaveFileDialog();
+                //modification des filtres de format de fichiers, l'ancienne version étant buggée
                 sfd.Title = "Specify a file name and file path";
                 sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
                 sfd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
@@ -88,6 +91,7 @@ namespace ImageEdgeDetection
             }
         }
 
+        //action clique sur choix de filtre de contour d'image
         private void ApplyFilter(bool preview)
         {
             if (previewBitmap == null || cmbEdgeDetection.SelectedIndex == -1)
@@ -214,16 +218,8 @@ namespace ImageEdgeDetection
             ApplyFilter(true);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //action clique sur bouton choix de couleur
         private void buttonChoiceColor_Click(object sender, EventArgs e)
         {
             OpenColorDialog();
@@ -232,15 +228,8 @@ namespace ImageEdgeDetection
 
 
         #region MACHADO_ApplyFilters
-
-        private void buttonMagicMosaic_Click(object sender, EventArgs e)
-        {
-            picPreview.Image = Origin;
-            picPreview.Image = ImageFilters.DivideCrop(new Bitmap(picPreview.Image));
-            previewBitmap = (Bitmap)picPreview.Image;
-            resultBitmap = previewBitmap;
-        }
-
+        
+        //action clique sur bouton Night Filter
         private void buttonNightFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -249,6 +238,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Hell Filter
         private void buttonHellFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 15);
@@ -256,6 +246,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Miami Filter
         private void buttonMiamiFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -264,6 +255,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Zen Filter
         private void buttonZenFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -272,6 +264,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Black and white
         private void buttonBlackAndWhite_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -280,6 +273,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Swap Filter
         private void buttonSwapFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -288,6 +282,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Crazy Filter
         private void buttonCrazyFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -297,6 +292,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Filter Green
         private void buttonMegaFilterGreen_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -306,6 +302,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Filter Orange
         private void buttonMegaFilterOrange_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -315,6 +312,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Filter Pink
         private void buttonMegaFilterPink_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;          // Cette ligne manque dans le programme PictureBox
@@ -324,6 +322,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Filter Custom
         private void buttonMegaFilterCustom_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -332,6 +331,7 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
+        //action clique sur bouton Filter Rainbow
         private void buttonRainbowFilter_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
@@ -340,10 +340,11 @@ namespace ImageEdgeDetection
             resultBitmap = previewBitmap;
         }
 
-        
+
 
         #endregion
 
+        //fonction palette de couleur pour choix
         public void OpenColorDialog()
         {
             ColorDialog CD = new ColorDialog();
@@ -355,7 +356,6 @@ namespace ImageEdgeDetection
         // Method for activate or inactivate the Filters Buttons
         public void ActivateFilterButtons(bool active)
         {
-            buttonMagicMosaic.Enabled = active;
             buttonNightFilter.Enabled = active;
             buttonHellFilter.Enabled = active;
             buttonMiamiFilter.Enabled = active;

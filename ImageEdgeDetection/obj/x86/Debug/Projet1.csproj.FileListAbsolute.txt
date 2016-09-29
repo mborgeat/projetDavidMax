@@ -14,3 +14,11 @@ C:\Users\Administrateur\Documents\Visual Studio 2015\Projects\projetDavidMax\Ima
 C:\Users\Administrateur\Documents\Visual Studio 2015\Projects\projetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
 C:\Users\Administrateur\Documents\Visual Studio 2015\Projects\projetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
 C:\Users\Administrateur\Documents\Visual Studio 2015\Projects\projetDavidMax\ImageEdgeDetection\obj\x86\Debug\Projet1.csproj.GenerateResource.Cache
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\Projet1.csprojResolveAssemblyReference.cache
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\Max\Documents\Visual Studio 2015\Projects\ProjetDavidMax\ImageEdgeDetection\obj\x86\Debug\Projet1.csproj.GenerateResource.Cache

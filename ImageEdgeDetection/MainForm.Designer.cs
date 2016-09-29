@@ -33,7 +33,6 @@
             this.btnOpenOriginal = new System.Windows.Forms.Button();
             this.btnSaveNewImage = new System.Windows.Forms.Button();
             this.cmbEdgeDetection = new System.Windows.Forms.ComboBox();
-            this.buttonMagicMosaic = new System.Windows.Forms.Button();
             this.buttonNightFilter = new System.Windows.Forms.Button();
             this.buttonHellFilter = new System.Windows.Forms.Button();
             this.buttonMiamiFilter = new System.Windows.Forms.Button();
@@ -115,15 +114,6 @@
             this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 37);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
-            // 
-            // buttonMagicMosaic
-            // 
-            this.buttonMagicMosaic.Location = new System.Drawing.Point(618, 12);
-            this.buttonMagicMosaic.Name = "buttonMagicMosaic";
-            this.buttonMagicMosaic.Size = new System.Drawing.Size(151, 40);
-            this.buttonMagicMosaic.TabIndex = 21;
-            this.buttonMagicMosaic.Text = "Magic Mosaic";
-            this.buttonMagicMosaic.Click += new System.EventHandler(this.buttonMagicMosaic_Click);
             // 
             // buttonNightFilter
             // 
@@ -237,7 +227,7 @@
             // 
             // buttonRainbowFilter
             // 
-            this.buttonRainbowFilter.Location = new System.Drawing.Point(618, 564);
+            this.buttonRainbowFilter.Location = new System.Drawing.Point(618, 12);
             this.buttonRainbowFilter.Name = "buttonRainbowFilter";
             this.buttonRainbowFilter.Size = new System.Drawing.Size(151, 40);
             this.buttonRainbowFilter.TabIndex = 33;
@@ -247,9 +237,9 @@
             // 
             // buttonChoiceColor
             // 
-            this.buttonChoiceColor.Location = new System.Drawing.Point(618, 618);
+            this.buttonChoiceColor.Location = new System.Drawing.Point(618, 564);
             this.buttonChoiceColor.Name = "buttonChoiceColor";
-            this.buttonChoiceColor.Size = new System.Drawing.Size(151, 46);
+            this.buttonChoiceColor.Size = new System.Drawing.Size(151, 100);
             this.buttonChoiceColor.TabIndex = 34;
             this.buttonChoiceColor.Text = "Choisir la couleur du filtre custom";
             this.buttonChoiceColor.UseVisualStyleBackColor = true;
@@ -272,7 +262,6 @@
             this.Controls.Add(this.buttonMiamiFilter);
             this.Controls.Add(this.buttonHellFilter);
             this.Controls.Add(this.buttonNightFilter);
-            this.Controls.Add(this.buttonMagicMosaic);
             this.Controls.Add(this.cmbEdgeDetection);
             this.Controls.Add(this.btnSaveNewImage);
             this.Controls.Add(this.btnOpenOriginal);
@@ -294,7 +283,6 @@
         private System.Windows.Forms.Button btnOpenOriginal;
         private System.Windows.Forms.Button btnSaveNewImage;
         private System.Windows.Forms.ComboBox cmbEdgeDetection;
-        private System.Windows.Forms.Button buttonMagicMosaic;
         private System.Windows.Forms.Button buttonNightFilter;
         private System.Windows.Forms.Button buttonHellFilter;
         private System.Windows.Forms.Button buttonMiamiFilter;
