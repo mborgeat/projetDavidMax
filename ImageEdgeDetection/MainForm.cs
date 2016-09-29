@@ -91,7 +91,7 @@ namespace ImageEdgeDetection
             }
         }
 
-        //action clique sur choix de filtre de contour d'image
+        //action clique sur choix de filtre de contour d'image (preview = true si on affiche, false si on enregistre)
         private void ApplyFilter(bool preview)
         {
             if (previewBitmap == null || cmbEdgeDetection.SelectedIndex == -1)
@@ -114,14 +114,8 @@ namespace ImageEdgeDetection
             Bitmap selectedSource = null;
             Bitmap bitmapResult = null;
 
-            if (preview == true)
-            {
-                selectedSource = previewBitmap;
-            }
-            else
-            {
-                selectedSource = originalBitmap;
-            }
+            // Contrairement à la version de base, on travaille toujours sur l'image previewBitmap, pas sur originalBitmap
+            selectedSource = previewBitmap;
 
             if (selectedSource != null)
             {
