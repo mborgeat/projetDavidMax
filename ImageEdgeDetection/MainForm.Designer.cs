@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.picPreview = new System.Windows.Forms.PictureBox();
             this.btnOpenOriginal = new System.Windows.Forms.Button();
             this.btnSaveNewImage = new System.Windows.Forms.Button();
@@ -55,7 +54,7 @@
             this.picPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.picPreview.Image = ((System.Drawing.Image)(resources.GetObject("picPreview.Image")));
+            this.picPreview.Image = global::ImageEdgeDetection.Properties.Resources.firefox;
             this.picPreview.Location = new System.Drawing.Point(12, 12);
             this.picPreview.Name = "picPreview";
             this.picPreview.Size = new System.Drawing.Size(600, 600);
@@ -111,7 +110,7 @@
             "Kirsch Grayscale"});
             this.cmbEdgeDetection.Location = new System.Drawing.Point(168, 627);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
-            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 37);
+            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 32);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 

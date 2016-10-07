@@ -1,0 +1,11 @@
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\TestMaxDavid.dll
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\TestMaxDavid.pdb
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\ImageEdgeDetection.exe
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\obj\Debug\TestMaxDavid.csprojResolveAssemblyReference.cache
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\obj\Debug\TestMaxDavid.Properties.Resources.resources
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\obj\Debug\TestMaxDavid.csproj.GenerateResource.Cache
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\obj\Debug\TestMaxDavid.dll
+C:\Users\uadmin\Documents\Visual Studio 2015\Projects\projetDavidMax\TestMaxDavid\obj\Debug\TestMaxDavid.pdb
