@@ -80,6 +80,9 @@
   <ItemGroup>
     <None Include="Resources\firefox_night.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefox_night_prewitt.jpg" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
