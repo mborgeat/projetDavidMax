@@ -48,6 +48,10 @@ namespace ImageEdgeDetection
         //apply color filter at your own taste
         public static Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
+            // If the given bitmap is null, return null
+            if (bmp == null)
+                return null;
+
 
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
 

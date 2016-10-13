@@ -10,6 +10,8 @@ namespace ImageEdgeDetection
         [TestMethod]
         public void TestNightFilter()
         {
+            // Test de la méthode ApplyFilter pour le filtre 'Night Filter' avec images de départ et d'arrivée
+
             // Image de départ
             Bitmap nonFiltree = new Bitmap(TestMaxDavid.Properties.Resources.firefox);
             // Image filtrée auparavant, servant de référence
@@ -34,6 +36,8 @@ namespace ImageEdgeDetection
         [TestMethod]
         public void TestPrewitt()
         {
+            // Test de la méthode prewittfilter avec images de départ et d'arrivée
+
             // Image de départ
             Bitmap nonFiltree = new Bitmap(TestMaxDavid.Properties.Resources.firefox_night);
             // Image filtrée auparavant, servant de référence
@@ -50,5 +54,29 @@ namespace ImageEdgeDetection
                     Assert.AreEqual(reference.Size, test.Size);
 
         }
+        [TestMethod]
+        public void TestNightFilterNull()
+        {
+            // Test de la méthode ApplyFilter (pour le filtre 'night filter') avec une image nulle
+
+            // Image de départ nulle
+            Bitmap nonFiltree = null;
+            
+            // Test de la méthode sur une image nulle : doit renvoyer null
+            Assert.AreEqual(null, ImageFilters.ApplyFilter(nonFiltree, 1, 1, 1, 25));
+        }
+
+        [TestMethod]
+        public void TestPrewittNull()
+        {
+            // Test de la méthode de détection de bords Prewitt avec une image nulle
+
+            // Image de départ nulle;
+            Bitmap nonFiltree = null;
+
+            // Test de la méthode sur une image nulle : doit renvoyer null
+            Assert.AreEqual(null, nonFiltree.PrewittFilter(false));
+        }
+
     }
 }
